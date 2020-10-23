@@ -30,12 +30,14 @@ config.read('config/config.ini')
 bot = commands.Bot(command_prefix="&")
 bot.owner_id = int(config['bot-data']['owner'])
 bot.remove_command("help")
+bot.booba_chance = int(config['bot']['booba_chance'])
 testing = config['bot']['testing'] in ['true', '1', 't', 'y', 'yes', 'yeah', 'yup', 'certainly', 'uh-huh']
 
 extensions = [
     "bot.help",
     "bot.scp",
-    "bot.party"
+    "bot.party",
+    "bot.booba"
 ]
 
 for extension in extensions:

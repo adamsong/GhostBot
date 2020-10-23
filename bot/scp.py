@@ -1,8 +1,6 @@
 import re
 
-from discord.ext import commands
 from discord.ext.commands import Cog
-
 
 scp_regex = re.compile('\\bSCP-\\d{3,4}J?\\b')
 

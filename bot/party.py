@@ -4,7 +4,7 @@ from discord.ext.commands import Cog
 import random
 
 
-class Scp(Cog):
+class Party(Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -54,4 +54,4 @@ class Scp(Cog):
 
 
 def setup(bot):
-    bot.add_cog(Scp(bot))
+    bot.add_cog(Party(bot))
