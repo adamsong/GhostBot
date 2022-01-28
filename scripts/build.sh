@@ -1,3 +1,3 @@
-docker build . -t docker.pkg.github.com/adamsong/ghostbot/ghostbot:latest -t docker.pkg.github.com/adamsong/ghostbot/ghostbot:v$1
-docker push docker.pkg.github.com/adamsong/ghostbot/ghostbot:latest
-docker push docker.pkg.github.com/adamsong/ghostbot/ghostbot:v$1
+docker build . -t ghcr.io/adamsong/ghostbot:latest -t ghcr.io/adamsong/ghostbot:v$1
+docker push ghcr.io/adamsong/ghostbot:latest
+docker push ghcr.io/adamsong/ghostbot:v$1
