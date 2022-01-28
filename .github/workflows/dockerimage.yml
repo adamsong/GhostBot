@@ -33,4 +33,4 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: adamsong/ghostbot:latest
+          tags: ghcr.io/adamsong/ghostbot:latest
