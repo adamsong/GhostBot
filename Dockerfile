@@ -1,7 +1,7 @@
 FROM gradle:7.3.3-jdk17 AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
-RUN gradle build -d --no-daemon
+RUN gradle build --no-daemon
 
 # Yes, this is the same base image as before, unfortunately I cannot find an arm/v7 JRE17 image
 FROM gradle:7.3.3-jdk17
